@@ -9,3 +9,5 @@ const navBar = () =>{
         </div>
     )
 }
+
+export default navBar
