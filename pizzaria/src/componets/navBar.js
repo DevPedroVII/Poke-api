@@ -1,13 +1,17 @@
-import React from "react"
+import React from "react";
 
 const NavBar = () => {
     return (
-        <div>
-            <nav>
-                Pokeapi
-            </nav>
-        </div>
-    )
+        <nav>
+            <div>
+                <img
+                alt="pokeapiLogo"
+                src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
+                className="NavBar-img"
+                />
+             </div>
+        </nav>
+    );
 }
 
-export default NavBar
+export default NavBar;
