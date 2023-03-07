@@ -1,8 +1,10 @@
 import React from "react";
 
 const SearchBar = () => {
+    let search = "charizard";
     const onChangeHandler = (e) => {
         console.log("pokemon: ",e.target.value)
+        search = e.target.value
     }
     return(
         <div className="searchbar-container">
