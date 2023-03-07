@@ -1,12 +1,11 @@
 import React from "react";
 
 const SearchBar = () => {
-    Return(
+    return(
         <div className="searchbar-container">
             <div className="searchbar">
-            <input placeholder="Buscar Pokemon"/>
+              <input placeholder="Buscar Pokemon"/>
             </div>
-
         </div>
     )
 }
