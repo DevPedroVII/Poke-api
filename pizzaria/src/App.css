@@ -17,3 +17,13 @@ nav {
 .App {
   text-align: center;
 }
+
+.searchbar-container{
+  display: flex;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.searchbar{
+
+}

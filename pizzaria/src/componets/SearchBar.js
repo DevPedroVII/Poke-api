@@ -5,7 +5,6 @@ const SearchBar = () => {
     const [search, setSearch] = useState("ditto")
 
     const onChangeHandler = (e) => {
-        console.log("pokemon: ", e.target.value)
         setSearch(e.target.value)
     }
 
