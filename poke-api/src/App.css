@@ -39,7 +39,10 @@ nav {
 .searchbar-bnt button{
   background-color: #5C58BB;
   border: none;
-
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
 }
 
 .App {
