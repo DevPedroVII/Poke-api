@@ -1,2 +1,1 @@
-# pizzaria_react
-Projeto de pizzaria usando react
+#pokeapi
