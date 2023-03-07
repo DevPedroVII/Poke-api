@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+
 
 const SearchBar = () => {
-    let search = "charizard";
+    const [search, setSearch] = useState("ditto")
+
     const onChangeHandler = (e) => {
-        console.log("pokemon: ",e.target.value)
-        search = e.target.value
+        console.log("pokemon: ", e.target.value)
+        setSearch(e.target.value)
     }
-    return(
+
+    const onbuttonClickHandler = () => {
+        console.log("pokemon:", search)
+    }
+    return (
         <div className="searchbar-container">
             <div className="searchbar">
-              <input placeholder="Buscar Pokemon" onChange={onChangeHandler}/>
+                <input placeholder="Buscar Pokemon" onChange={onChangeHandler} />
+            </div>
+            <div className="searchbar-bnt">
+                <button onClick={onbuttonClickHandler}>Buscar </button>
             </div>
         </div>
     )
