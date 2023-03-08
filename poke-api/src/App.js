@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <SearchBar/>
+      <SearchBar
+      onSearch={searchPokemon}
+      />
       <div className="App"> </div>
     </div>
   );
