@@ -10,6 +10,7 @@ const SearchBar = (props) => {
     }
 
     const onbuttonClickHandler = () => {
+        const pokemon = onSearch (search)
         console.log("pokemon:", search)
     }
     return (
