@@ -10,7 +10,7 @@ function App() {
     <div>
       <NavBar/>
       <SearchBar
-      onSearch={searchPokemon}
+      onSearch={onSearchHandler}
       />
       <div className="App"> </div>
     </div>
