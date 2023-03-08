@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 const SearchBar = (props) => {
-    const { onSearch} = props;
+    const { onSearch } = props;
     const [search, setSearch] = useState("ditto")
 
     const onChangeHandler = (e) => {
