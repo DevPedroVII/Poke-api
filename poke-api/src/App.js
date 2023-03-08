@@ -4,7 +4,7 @@ import NavBar from './componets/NavBar';
 import SearchBar from './componets/SearchBar';
 import (searchPokemon) from ".api"
 
-
+const onSearchHandler
 function App() {
   return (
     <div>
