@@ -7,8 +7,8 @@ import { searchPokemon } from ".api"
 
 function App() {
   const onSearchHandler = (pokemon) => {
-
-  }
+    searchPokemon
+    }
   return (
     <div>
       <NavBar />
