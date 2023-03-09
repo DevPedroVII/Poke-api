@@ -11,6 +11,7 @@ function App() {
     }
   return (
     <div>
+      editar####
       <NavBar />
       <SearchBar
         onSearch={onSearchHandler}
