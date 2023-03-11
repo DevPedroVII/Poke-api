@@ -5,7 +5,6 @@ import { searchPokemon } from "../api";
 const SearchBar = () => {
     const [search, setSearch] = useState("ditto")
     const [pokemon, setPokemon] = useState()
-
     const onChangeHandler = (e) => {
         setSearch(e.target.value)
     }
@@ -19,8 +18,8 @@ const SearchBar = () => {
         setPokemon(result)
     }
     return (
-        <div>className = "searchbar-container">
-            <div div className = "searchbar" >
+        <div className = "searchbar-container">
+            <div className = "searchbar" >
         <input placeholder="Buscar Pokemon" onChange={onChangeHandler} />
             </div >
     <div className="searchbar-bnt">
