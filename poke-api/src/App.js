@@ -6,7 +6,7 @@ import { searchPokemon } from ".api"
 
 
 function App() {
-  const onSearchHandler = (pokemon) => {
+  const onSearchHandler = async (pokemon) => {
     searchPokemon
     }
   return (
