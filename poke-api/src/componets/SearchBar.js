@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { searchPokemon } from "../api";
 
 
 const SearchBar = (props) => {
@@ -12,6 +13,10 @@ const SearchBar = (props) => {
     const onbuttonClickHandler = () => {
         const pokemon = onSearch (search)
         console.log("pokemon:", search)
+    }
+
+    const onSearchHandler = async (pokemon) => {
+        const result = await searchPokemon()
     }
     return (
         <div className="searchbar-container">
