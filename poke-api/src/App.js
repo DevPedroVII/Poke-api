@@ -6,9 +6,8 @@ import { searchPokemon } from ".api"
 
 
 function App() {
-  const onSearchHandler = async (pokemon) => {
-    searchPokemon
-    }
+
+  }
   return (
     <div>
 
