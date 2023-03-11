@@ -10,8 +10,7 @@ const SearchBar = () => {
     }
 
     const onbuttonClickHandler = () => {
-        const pokemon = onSearch (search)
-        console.log("pokemon:", search)
+        onSearchHandler(search)
     }
 
     const onSearchHandler = async (pokemon) => {
