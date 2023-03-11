@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { searchPokemon } from "../api";
 
 
-const SearchBar = (props) => {
-    const { onSearch } = props;
+const SearchBar = () => {
     const [search, setSearch] = useState("ditto")
 
     const onChangeHandler = (e) => {
