@@ -26,6 +26,11 @@ const SearchBar = () => {
             <div className="searchbar-bnt">
                 <button onClick={onbuttonClickHandler}>Buscar </button>
             </div>
+            {!pokemon?(
+                <div>
+                    <div> {pokemon.name} </div>
+                </div>
+            )}
         </div>
     )
 }
