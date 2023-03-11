@@ -17,6 +17,7 @@ const SearchBar = (props) => {
 
     const onSearchHandler = async (pokemon) => {
         const result = await searchPokemon(pokemon)
+        console.log("result:", pokemon)
     }
     return (
         <div className="searchbar-container">
