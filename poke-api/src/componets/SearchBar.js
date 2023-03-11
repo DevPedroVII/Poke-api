@@ -4,6 +4,7 @@ import { searchPokemon } from "../api";
 
 const SearchBar = () => {
     const [search, setSearch] = useState("ditto")
+    const [pokemon, setPokemon] = useState()
 
     const onChangeHandler = (e) => {
         setSearch(e.target.value)
@@ -15,7 +16,6 @@ const SearchBar = () => {
 
     const onSearchHandler = async (pokemon) => {
         const result = await searchPokemon(pokemon)
-        console.log("result:", pokemon)
     }
     return (
         <div className="searchbar-container">
