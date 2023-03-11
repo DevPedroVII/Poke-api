@@ -19,19 +19,20 @@ const SearchBar = () => {
         setPokemon(result)
     }
     return (
-        <div className="searchbar-container">
-            <div className="searchbar">
-                <input placeholder="Buscar Pokemon" onChange={onChangeHandler} />
-            </div>
-            <div className="searchbar-bnt">
-                <button onClick={onbuttonClickHandler}>Buscar </button>
-            </div>
-            {!pokemon?(
-                <div>
-                    <div> {pokemon.name} </div>
-                </div>
-            )}
+        <div>className = "searchbar-container">
+            <div div className = "searchbar" >
+        <input placeholder="Buscar Pokemon" onChange={onChangeHandler} />
+            </div >
+    <div className="searchbar-bnt">
+        <button onClick={onbuttonClickHandler}>Buscar </button>
+    </div>
+{
+    !pokemon ? (
+        <div>
+            <div> {pokemon.name} </div>
         </div>
+    ) : null}
+        </div >
     )
 }
 export default SearchBar;
