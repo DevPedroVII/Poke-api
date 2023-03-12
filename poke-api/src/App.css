@@ -45,6 +45,12 @@ nav {
   padding: 10px 12px;
 }
 
+
+.pokedex-header{
+  display: flex;
+  flex-direction: row;
+}
+
 .App {
   text-align: center;
 }
