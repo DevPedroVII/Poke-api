@@ -54,6 +54,12 @@ nav {
   padding: 10px;
 }
 
+.pokedex-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .App {
   text-align: center;
 }
