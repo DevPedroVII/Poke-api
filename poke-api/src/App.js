@@ -19,10 +19,8 @@ function App() {
 
   useEffect(() => {
     console.log("carregou")
-    return () => {
-
-    }
-  }, [])
+  }
+    )
 
   return (
     <div>
