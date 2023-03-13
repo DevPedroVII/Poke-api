@@ -14,13 +14,12 @@ function App() {
     } catch(error){
 
     }
-
   }
 
   useEffect(() => {
     console.log("carregou")
-  }
-    )
+    fetchPokemons();
+  })
 
   return (
     <div>
