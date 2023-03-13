@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import NavBar from './componets/NavBar';
 import  Pokedex  from './componets/pokedex';
