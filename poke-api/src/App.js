@@ -9,7 +9,12 @@ function App() {
   const [pokemons, setPokemons] = useState([])
 
   const fetchPokemons = async () =>{
-    setLoading(true)
+    try{
+      setLoading(true)
+    } catch(error){
+
+    }
+
   }
 
   useEffect(() => {
