@@ -7,10 +7,14 @@ const Pokedex = (props) =>{
             <div className="pokedex-header">
             <h1>Pokedex</h1>
             <div>Paginação</div>
-            </div>
-
+           </div>
+             {loading ? (
+           <div>Carregando, slow...</div>
+             ): (
+            <div className="pokedex-grid"> </div>
+            )}
         </div>
-    )
+         )
 }
 
 export default Pokedex;
