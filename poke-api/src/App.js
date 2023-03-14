@@ -5,8 +5,8 @@ import  Pokedex  from './componets/pokedex';
 import SearchBar from './componets/SearchBar';
 
 function App() {
-  const [loading, setLoading] = useState(false)
-  const [pokemons, setPokemons] = useState([])
+  const [loading, setLoading] = useState(false);
+  const [pokemons, setPokemons] = useState([]);
 
   const fetchPokemons = async () =>{
     try{
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     console.log("carregou")
     fetchPokemons();
-  })
+  }, [pokemons] )
 
   return (
     <div>
