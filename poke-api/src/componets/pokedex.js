@@ -8,16 +8,17 @@ const Pokedex = (props) => {
                 <h1>Pokedex</h1>
                 <div>Paginação</div>
             </div>
-            {loading ? (
+            {loading || !pokemons ? (
                 <div>Carregando, slow...</div>
             ) : (
                 <div className="pokedex-grid">
-                    {pokemons.map({pokemon,index} => {
+                    {pokemons.map((pokemon,index) => {
                         return (<div>
                             <div>#{pokemon.id} <div/>
                             <div>#{pokemon.name} <div/>
-                            <img ></img>
-                        </div>)
+                            <img alt={pokemon.name} src = {pokemon.sprites.front_default} />
+                          </div>
+                          )
                     })}
                 </div>
             )}
