@@ -8,7 +8,7 @@ const Pokedex = (props) => {
                 <h1>Pokedex</h1>
                 <div>Paginação</div>
             </div>
-            {loading || !pokemons ? (
+            {loading ? (
                 <div>Carregando, slow...</div>
             ) : (
                 <div className="pokedex-grid">
